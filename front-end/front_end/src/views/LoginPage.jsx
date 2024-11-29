@@ -14,7 +14,7 @@ export default function LoginPage() {
     try {
       const body = { email, password };
 
-      const { data } = await axios.post("http://memorymaster.site/login", body);
+      const { data } = await axios.post("https://memorymaster.site/login", body);
 
       localStorage.setItem("access_token", data.access_token);
 
@@ -70,7 +70,7 @@ export default function LoginPage() {
       const { credential } = credentialResponse;
 
       const { data } = await axios.post(
-        "http://memorymaster.site/google-login",
+        "https://memorymaster.site/google-login",
         {},
         {
           headers: {

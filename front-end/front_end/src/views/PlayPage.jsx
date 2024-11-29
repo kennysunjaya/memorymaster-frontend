@@ -74,7 +74,7 @@ export default function PlayPage() {
 
   async function getTips() {
     try {
-      const { data } = await axios.get("http://memorymaster.site/tips", {
+      const { data } = await axios.get("https://memorymaster.site/tips", {
         headers: {
           Authorization: `Bearer ${localStorage.access_token}`,
         },
@@ -106,7 +106,7 @@ export default function PlayPage() {
   async function recordHistory() {
     try {
       const body = { score: level };
-      const { data } = await axios.post("http://memorymaster.site/game", body, {
+      const { data } = await axios.post("https://memorymaster.site/game", body, {
         headers: {
           Authorization: `Bearer ${localStorage.access_token}`,
         },

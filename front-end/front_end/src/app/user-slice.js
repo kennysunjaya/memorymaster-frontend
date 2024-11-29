@@ -37,7 +37,7 @@ export const fetchAsync = () => async (dispatch) => {
   try {
     dispatch(fetchPending());
 
-    const { data } = await axios.get("http://memorymaster.site/users", {
+    const { data } = await axios.get("https://memorymaster.site/users", {
       headers: {
         Authorization: `Bearer ${localStorage.access_token}`,
       },

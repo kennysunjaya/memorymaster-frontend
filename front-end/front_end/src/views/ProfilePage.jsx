@@ -18,7 +18,7 @@ export default function ProfilePage() {
       form.append("username", username);
       console.log(imgFile, username);
 
-      const { data } = await axios.put("http://memorymaster.site/users", form, {
+      const { data } = await axios.put("https://memorymaster.site/users", form, {
         headers: {
           Authorization: `Bearer ${localStorage.access_token}`,
         },
@@ -71,7 +71,7 @@ export default function ProfilePage() {
 
   async function fetchUser() {
     try {
-      const { data } = await axios.get("http://memorymaster.site/user", {
+      const { data } = await axios.get("https://memorymaster.site/user", {
         headers: {
           Authorization: `Bearer ${localStorage.access_token}`,
         },

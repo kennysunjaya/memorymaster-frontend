@@ -7,7 +7,7 @@ export default function HistoryPage() {
 
   async function fetchUser() {
     try {
-      const { data } = await axios.get("http://memorymaster.site/user", {
+      const { data } = await axios.get("https://memorymaster.site/user", {
         headers: {
           Authorization: `Bearer ${localStorage.access_token}`,
         },
@@ -20,7 +20,7 @@ export default function HistoryPage() {
 
   async function handleDelete(id) {
     try {
-      const { data } = await axios.delete(`http://memorymaster.site/game/${id}`, {
+      const { data } = await axios.delete(`https://memorymaster.site/game/${id}`, {
         headers: {
           Authorization: `Bearer ${localStorage.access_token}`,
         },
