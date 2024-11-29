@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#loginbody {
+  font-family: "Press Start 2P", cursive;
+  background-color: #011f3f;
+}
+
+#loginh1 {
+  color: #fef2bf;
+}
+
+#Navbar {
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: "Press Start 2P", cursive;
+}
+
+#homediv {
+  font-family: "Press Start 2P", cursive;
+  color: #fef2bf;
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/homebg.gif") no-repeat center center fixed;
+  background-size: cover;
+}
+
+#gamebody {
+  font-family: "Press Start 2P", cursive;
+  background-color: #011f3f;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#gameh1 {
+  color: #fef2bf;
+}
+
+.btn {
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.btn.green {
+  background-color: green;
+}
+
+.btn.red {
+  background-color: red;
+}
+
+.btn.yellow {
+  background-color: yellow;
+}
+
+.btn.blue {
+  background-color: blue;
+}
+
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #fef2bf;
+  color: black;
+  padding: 10px 20px;
+  border: 4px solid black;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "Press Start 2P", cursive;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.back-btn:hover {
+  background-color: yellow;
+  transform: scale(1.1);
+}
+
+/* This is the old flash you can use it if you need it  */
+/* .flash {
+  animation: flash-animation 0.45s ease-in-out;
+} */
+
+.flash {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+@keyframes flash-animation {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.clicked {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}

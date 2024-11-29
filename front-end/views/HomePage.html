@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <style>
+      /* Retro theme font */
+      body {
+        font-family: "Press Start 2P", cursive;
+        color: #fef2bf; /* Light yellow text */
+        margin: 0;
+        background: url("./Stars\ Train\ GIF\ -\ Stars\ Train\ Pixel\ Art\ -\ Discover\ &\ Share\ GIFs.gif") no-repeat center center fixed;
+        background-size: cover;
+      }
+
+      nav {
+        background-color: transparent; /* Transparent navbar */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="flex items-center justify-between p-4 border-b-4 border-black">
+      <div class="text-yellow-300 text-xl">
+        <h1>Memory Master</h1>
+      </div>
+    </nav>
+
+    <!-- Home Page Content -->
+    <div class="flex flex-col items-center justify-center h-screen">
+      <!-- High Score -->
+      <div class="text-center mb-8">
+        <h2 class="text-2xl text-yellow-400">HIGH SCORE</h2>
+        <p class="text-white text-xl mt-2">1234567890</p>
+      </div>
+
+      <!-- Start New Game -->
+      <div class="text-center mb-8">
+        <h1 class="text-4xl text-yellow-400">START NEW GAME</h1>
+      </div>
+
+      <!-- Player Options -->
+      <div class="flex flex-col items-center space-y-4">
+        <button class="bg-yellow-400 hover:bg-yellow-300 text-black font-bold py-2 px-6 rounded-lg shadow-md transition duration-200">1 Player</button>
+        <button class="bg-yellow-400 hover:bg-yellow-300 text-black font-bold py-2 px-6 rounded-lg shadow-md transition duration-200">2 Player</button>
+      </div>
+    </div>
+  </body>
+</html>
