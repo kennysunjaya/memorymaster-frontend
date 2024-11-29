@@ -13,7 +13,7 @@ export default function SignUpPage() {
     e.preventDefault();
     try {
       const body = { username, email, password };
-      const { data } = await axios.post("http://localhost:3000/register", body);
+      const { data } = await axios.post("http://memorymaster.site/register", body);
       navigate("/login");
 
       Toastify({

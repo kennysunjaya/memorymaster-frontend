@@ -7,7 +7,7 @@ export default function HomePage() {
 
   async function fetchHighScore() {
     try {
-      const { data } = await axios.get("http://localhost:3000/highscore", {
+      const { data } = await axios.get("http://memorymaster.site/highscore", {
         headers: {
           Authorization: `Bearer ${localStorage.access_token}`,
         },
